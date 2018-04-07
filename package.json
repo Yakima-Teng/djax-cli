@@ -1,0 +1,52 @@
+{
+  "name": "djax-cli",
+  "version": "1.0.0",
+  "description": "A simple CLI for scaffolding djax projects.",
+  "main": "README.md",
+  "bin": {
+    "djax": "bin/djax",
+    "djax-init": "bin/djax-init"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yakima-Teng/djax-cli.git"
+  },
+  "keywords": [
+    "djax",
+    "cli",
+    "mpa"
+  ],
+  "author": "cleveryun@163.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Yakima-Teng/djax-cli/issues"
+  },
+  "homepage": "https://github.com/Yakima-Teng/djax-cli#readme",
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "dependencies": {
+    "async": "^2.6.0",
+    "chalk": "^2.3.2",
+    "commander": "^2.15.1",
+    "consolidate": "^0.15.1",
+    "download-git-repo": "^1.0.2",
+    "handlebars": "^4.0.11",
+    "inquirer": "^5.2.0",
+    "metalsmith": "^2.3.0",
+    "minimatch": "^3.0.4",
+    "multimatch": "^2.1.0",
+    "ora": "^2.0.0",
+    "read-metadata": "^1.0.0",
+    "request": "^2.85.0",
+    "rimraf": "^2.6.2",
+    "semver": "^5.5.0",
+    "tildify": "^1.2.0",
+    "user-home": "^2.0.0",
+    "util": "^0.10.3",
+    "validate-npm-package-name": "^3.0.0"
+  }
+}
