@@ -56,7 +56,7 @@ help()
  * settings
  */
 let template = program.args[0]
-if (template === 'default') template = 'djax'
+if (/^default($)|(#.+)/.test(template)) template = template.replace(/^default/, 'djax')
 const hasSlash = template.indexOf('/') > -1
 const rawName = program.args[1]
 const inPlace = !rawName || rawName === '.'
