@@ -1,0 +1,42 @@
+#!/usr/bin/env node
+
+const logger = require('../lib/logger')
+const request = require('request')
+const chalk = require('chalk')
+
+/**
+ * Padding.
+ */
+
+console.log()
+process.on('exit', () => {
+  console.log()
+})
+
+/**
+ * List repos.
+ */
+
+request({
+  url: 'https://api.github.com/users/Yakima-Teng/repos',
+  headers: {
+    'User-Agent': 'djax-cli'
+  }
+}, (err, res, body) => {
+  if (err) logger.fatal(err)
+  const requestBody = JSON.parse(body)
+  if (Array.isArray(requestBody)) {
+    console.log('  Available official templates:')
+    console.log()
+    requestBody.filter(repo => {
+      return /^djax/.test(repo.name) && repo.name !== 'djax-cli'
+    }).forEach(repo => {
+      console.log(
+        '  ' + chalk.yellow('★') +
+        '  ' + chalk.blue(repo.name) +
+        ' - ' + repo.description)
+    })
+  } else {
+    console.error(requestBody.message)
+  }
+})
