@@ -270,7 +270,7 @@ _Note_: The surrounding quotes are necessary on zsh shells because of the specia
 
 ### Thanks
 
-Thanks to the project [vue-cli 2++](https://github.com/vuejs/vue-cli).
+This project is based on the project [vue-cli (version 2+)](https://github.com/vuejs/vue-cli).
 
 ### License
 
