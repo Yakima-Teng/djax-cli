@@ -30,7 +30,7 @@ The above command pulls the template from [Yakima-Teng/djax](https://github.com/
 
 The purpose of official djax project templates are to provide opinionated, battery-included development tooling setups so that users can get started with actual app code as fast as possible. However, these templates are un-opinionated in terms of how you structure your app code and what libraries you use.
 
-All official project templates are repos whose name is started with letters 'djax' (except for djax-cli) in the [Yakima-Teng](https://github.com/Yakima-Teng). When a new official template is added, you will be able to run `djax init <template-name> <project-name>` to use that template. You can run `djax list` to see all available official templates.
+All official project templates are repos whose name is started with letters 'djax' (except for djax-cli) in the [Yakima-Teng (github repository)](https://github.com/Yakima-Teng). When a new official template is added, you will be able to run `djax init <template-name> <project-name>` to use that template. You can run `djax list` to see all available official templates.
 
 Current available templates include:
 
