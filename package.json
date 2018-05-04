@@ -18,7 +18,8 @@
   "keywords": [
     "djax",
     "cli",
-    "mpa"
+    "mpa",
+    "multiply-page application"
   ],
   "author": "cleveryun@163.com",
   "license": "MIT",

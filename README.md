@@ -1,6 +1,18 @@
 # djax-cli
 
-A simple CLI for scaffolding Djax projects.
+<p align="center">
+  <a href="https://npmcharts.com/compare/djax-cli?minimal=true">
+    <img src="https://img.shields.io/npm/dm/djax-cli.svg" alt="Downloads">
+  </a>
+  <a href="https://www.npmjs.com/package/djax-cli">
+    <img src="https://img.shields.io/npm/v/djax-cli.svg" alt="Version">
+  </a>
+  <a href="https://www.npmjs.com/package/djax-cli">
+    <img src="https://img.shields.io/npm/l/djax-cli.svg" alt="License">
+  </a>
+</p>
+
+> A simple CLI for scaffolding Djax projects.
 
 ### Installation
 
