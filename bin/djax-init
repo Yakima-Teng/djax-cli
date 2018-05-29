@@ -104,10 +104,10 @@ function run () {
           logger.fatal(err)
         }
         log()
-        logger.success('Generated "$s".', name)
+        logger.success('Generated "%s".', name)
       })
     } else {
-      logger.fatal('Local template "$s" not found.', template)
+      logger.fatal('Local template "%s" not found.', template)
     }
   } else {
     checkVersion(() => {
