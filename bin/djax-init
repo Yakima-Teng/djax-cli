@@ -34,7 +34,7 @@ program.on('--help', () => {
   log('  Examples:')
   log()
   log(chalk.gray('    # create a new project with an official template'))
-  log('    $ djax init default my-project')
+  log('    $ djax init template-name my-project')
   log()
   log(chalk.gray('    # create a new project straight from a github template'))
   log('    $ djax init username/repo my-project')
@@ -56,8 +56,15 @@ help()
  * settings
  */
 let template = program.args[0]
-if (/^default($)|(#.+)/.test(template)) template = template.replace(/^default/, 'djax')
+if (/^default($)|(#.+)/.test(template)) {
+  template = template.replace(/^default/, 'djax')
+}
+
+// 若模板名不含`/`则认为是官方模版
 const hasSlash = template.indexOf('/') > -1
+if (!hasSlash && template.indexOf('djax') === -1) {
+  template = `djax-template-${template}`
+}
 const rawName = program.args[1]
 const inPlace = !rawName || rawName === '.'
 const name = inPlace ? path.relative('../', process.cwd()) : rawName
