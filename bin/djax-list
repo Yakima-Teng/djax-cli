@@ -29,7 +29,7 @@ request({
     console.log('  Available official templates:')
     console.log()
     requestBody.filter(repo => {
-      return /^djax($)|(#.+)/.test(repo.name || /^djax-template/.test(repo.name)
+      return /^djax($)|(#.+)/.test(repo.name) || /^djax-template/.test(repo.name)
     }).forEach(repo => {
       console.log(
         '  ' + chalk.yellow('★') +
