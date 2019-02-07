@@ -51,6 +51,7 @@ djax list
 
 目前支持的模板列表：
 
+- djax：（因存在过度设计，增加了没必要的学习成本，不再建议使用该模版）简单多页应用开发模版，支持SEO，技术栈：gulp + pug + ES6 + SASS。
 - resume: 简单移动端H5活动页开发模板，支持SEO，技术栈：gulp + ejs + ES6 + SASS + 附带常用第三方js库。
 - quilt：简单PC多页应用开发模板，支持SEO，技术栈：gulp + pug + ES6 + SASS + gitbook文档编写。
 - yxeye：复杂多页应用开发模板，支持SEO，webpack + ES6 + SASS。
