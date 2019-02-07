@@ -62,7 +62,17 @@ if (/^default($)|(#.+)/.test(template)) {
 
 // 若模板名不含`/`则认为是官方模版
 const hasSlash = template.indexOf('/') > -1
-if (!hasSlash && template.indexOf('djax') === -1) {
+const specialProjectNames = [
+  'resume',
+  'quilt',
+  'yxeye',
+  'lookjavascript',
+  'utils-daily'
+]
+if (
+  !hasSlash &&
+  specialProjectNames.indexOf(template) === -1
+) {
   template = `djax-template-${template}`
 }
 const rawName = program.args[1]

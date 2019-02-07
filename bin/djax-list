@@ -18,7 +18,8 @@ process.on('exit', () => {
  */
 
 request({
-  url: 'https://api.github.com/users/Yakima-Teng/repos',
+  // vue-cli2+用的是一个专门的github用户来放置官方模板项目，所以默认查30条就够，个人仓库的包较多，100条基本足够了
+  url: 'https://api.github.com/users/Yakima-Teng/repos?per_page=100&page=1',
   headers: {
     'User-Agent': 'djax-cli'
   }
@@ -29,7 +30,16 @@ request({
     console.log('  Available official templates:')
     console.log()
     requestBody.filter(repo => {
-      return /^djax($)|(#.+)/.test(repo.name) || /^djax-template/.test(repo.name)
+      console.log(repo.name)
+      return (
+        /^djax-template/.test(repo.name) ||
+        /^djax($)|(#.+)/.test(repo.name) ||
+        /^resume($)|(#.+)/.test(repo.name) ||
+        /^quilt($)|(#.+)/.test(repo.name) ||
+        /^yxeye($)|(#.+)/.test(repo.name) ||
+        /^lookjavascript($)|(#.+)/.test(repo.name) ||
+        /^utils-daily($)|(#.+)/.test(repo.name)
+      )
     }).forEach(repo => {
       console.log(
         '  ' + chalk.yellow('★') +
