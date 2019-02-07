@@ -55,7 +55,7 @@ djax list
 - quilt：简单PC多页应用开发模板，支持SEO，技术栈：gulp + pug + ES6 + SASS + gitbook文档编写。
 - yxeye：复杂多页应用开发模板，支持SEO，webpack + ES6 + SASS。
 - lookjavascript：gitbook文档项目模板。
-- utils-daily：公共JS函数库项目模板。
+- utils-daily：公共JS函数库项目模板。
 
 ### 查看当前djax-cli命令行工具的版本
 
